@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BillSpliter</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top">
+        <h1>Bill Splitter</h1>
+        <p>Split costs between friends</p>
+      </div>
+      <div class="bottom">
+        <label for="price">Amount to pay:</label>
+        <input type="number" id="price" />
+
+        <label for="people">Amount of people:</label>
+        <input type="number" id="people" />
+
+        <label for="tip">Tip</label>
+        <select id="tip">
+          <option value="0" disabled="" selected="">
+            - choose the tip % -
+          </option>
+          <option value="0.00">0%</option>
+          <option value="0.01">1%</option>
+          <option value="0.02">2%</option>
+          <option value="0.03">3%</option>
+          <option value="0.04">4%</option>
+          <option value="0.05">5%</option>
+          <option value="0.06">6%</option>
+          <option value="0.07">7%</option>
+          <option value="0.08">8%</option>
+          <option value="0.09">9%</option>
+          <option value="0.1">10%</option>
+          <option value="0.11">11%</option>
+          <option value="0.12">12%</option>
+          <option value="0.13">13%</option>
+          <option value="0.14">14%</option>
+          <option value="0.15">15%</option>
+          <option value="0.16">16%</option>
+          <option value="0.17">17%</option>
+          <option value="0.18">18%</option>
+          <option value="0.19">19%</option>
+          <option value="0.2">20%</option>
+          <option value="0.21">21%</option>
+          <option value="0.22">22%</option>
+          <option value="0.23">23%</option>
+          <option value="0.24">24%</option>
+          <option value="0.25">25%</option>
+          <option value="0.26">26%</option>
+          <option value="0.27">27%</option>
+          <option value="0.28">28%</option>
+          <option value="0.29">29%</option>
+          <option value="0.3">30%</option>
+        </select>
+        <button class="count">Count</button>
+        <p class="error"></p>
+        <p class="cost-info">
+          Amount per person <span class="cost"></span>USD!
+        </p>
+      </div>
+    </div>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

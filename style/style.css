@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  color: white;
+}
+
+body::after {
+  content: "";
+  background: url(https://bs-uploads.toptal.io/blackfish-uploads/blog/article/content/cover_image_file/cover_image/15680/cover-default-cover-9-e9e2a4e027551681be020a158ca8db2c.png)
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 10% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  box-shadow: 0 0 20px white;
+}
+
+.top p {
+  margin: 10% auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h1 {
+  margin: 10% auto;
+  text-align: center;
+  font-size: 5rem;
+  color: #00ba41;
+  text-shadow: 0 0 20px black;
+}
+
+.bottom {
+  padding: 40px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+input,
+select {
+  margin-bottom: 25px;
+  padding: 8px 10px;
+  width: 50vh;
+  border-radius: 5px;
+}
+
+.count {
+  display: block;
+  margin: 20px auto;
+  padding: 20px 10px;
+  width: 40%;
+  font-size: 24px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #00ba40;
+  border: none !important;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.cost-info {
+  display: none;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.cost {
+  font-weight: bold;
+}
+
+.error {
+  font-size: 2rem;
+  color: rgb(199, 63, 29);
+  text-align: center;
+  text-shadow: 0 0 20px black;
+}
+
+@media (min-width: 768px) {
+  .count:hover {
+    opacity: 0.7;
+  }
+}
