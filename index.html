@@ -22,7 +22,7 @@
 
         <label for="tip">Tip</label>
         <select id="tip">
-          <option value="0" disabled="" selected="">
+          <option value="" disabled="" selected="">
             - choose the tip % -
           </option>
           <option value="0.00">0%</option>
@@ -62,8 +62,14 @@
         <p class="cost-info">
           Amount per person <span class="cost"></span>USD!
         </p>
+        <div><button class="clearBtn">Clear</button></div>
       </div>
     </div>
-    <script src="JS/script.js"></script>
+    <div>
+      <ul class="localData">
+      </ul>
+    </div>
+    <div><button class="btnClearLocalStorage">Clear LocalStorage</button></div>
+    <script type="text/javascript" src="JS/script.js"></script>
   </body>
 </html>
