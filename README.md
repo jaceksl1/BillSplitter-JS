@@ -1,5 +1,10 @@
 # BillSplitter-JS
-Simple bill splitter - JS vanilla
+Simple bill splitter 
+Tech:
+- JS vanilla
+- HTML
+- CSS
+- RWD
 
 Update - 20/10/2021
 
