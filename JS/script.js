@@ -33,12 +33,13 @@ const countCost = () => {
   cost.textContent = sum.toFixed(2);
   error.style.display = "none";
   const li = document.createElement("li");
+  li.setAttribute("id", "li");
   li.innerText = sum + "USD" + elDateText;
   console.log(li);
   localData.appendChild(li);
   document.body.append(localData);
-  localStorage.setItem(li, li.innerText);
-  const data = localStorage.getItem(li);
+  localStorage.setItem("li", li.innerText);
+  const data = localStorage.getItem("li");
   console.log(localStorage);
 };
 
@@ -57,9 +58,8 @@ countBtn.addEventListener("click", function () {
 });
 
 const btnClearLocalStorage = document.querySelector(".btnClearLocalStorage");
-
 btnClearLocalStorage.addEventListener("click", function() {
 localStorage.clear();
 console.log(localStorage);
+li.remove();  
 })
-
